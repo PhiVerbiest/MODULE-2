@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&family=Supermercado+One&display=swap');
+
+* {
+    margin: 0;
+
+    margin-left: 30px;
+    margin-top: 90px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+#outline-nsBord {
+    display: flex;
+
+    width: 560px;
+    height: 340px;
+    border: 3px solid black;
+
+    margin-left: 320px;
+
+    background: rgb(19, 7, 189);
+}
+
+#left-13b {
+    width: 140px;
+    height: 340px;
+    border: 3px solid black;
+
+    margin-left: 179px;
+    margin-top: -346px;
+
+    background: rgb(19, 7, 189);
+}
+
+#platform-13b {
+
+
+    width: 106px;
+    height: 106px;
+    /* border: 3px solid black; */
+
+    margin-left: 14px;
+    margin-top: 37px;
+
+    background: rgb(241, 241, 234);
+
+    color: rgb(19, 7, 189);
+}
+
+#platform-13b p {
+    position: absolute;
+
+    margin-top: 34px;
+    margin-left: 2px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+
+    font-size: 3.8rem;
+
+    color: rgb(19, 7, 189);
+}
+
+#platform-13b h6 {
+    position: absolute;
+
+    margin-left: 75px;
+    margin-top: 27px;
+
+    font-size: 2.5rem;
+    font-weight: 450;
+
+    color: rgb(19, 7, 189);
+}
+
+#vierkantje {
+    position: absolute;
+
+    width: 25px;
+    height: 25px;
+    /* border: 3px solid black; */
+
+    margin-left: 14px;
+    margin-top: 37px;
+
+    background: rgb(19, 7, 189);
+}
+
+#spoor {
+    position: absolute;
+
+    width: 60px;
+    height: 25px;
+    /* border: 3px solid black; */
+
+    margin-left: 39px;
+    margin-top: -106px;
+
+    background: rgb(241, 241, 234);
+
+}
+
+#spoor p {
+    text-align: start;
+    color: rgb(19, 7, 189);
+
+    font-size: smaller;
+
+    margin-top: 8px;
+    margin-left: 2px;
+}
+
+#right-klok {
+    width: 245px;
+    height: 340px;
+    border: 3px solid black;
+
+    margin-left: 870px;
+    margin-top: -346px;
+
+    background: rgb(241, 241, 234);
+}
+
+#klok {
+    width: 180px;
+    height: 180px;
+
+    margin-top: -55px;
+    margin-left: -32px;
+
+    text-align: center;
+    padding-left: 33px;
+}
+
+#main-bord {
+
+
+    width: 495px;
+    height: 275px;
+    border: 3px solid black;
+
+    margin-left: 348px;
+    margin-top: -307px;
+
+    background: rgb(241, 241, 234);
+
+}
+
+#tijd-ns2 {
+    position: absolute;
+
+    width: 247px;
+    height: 50px;
+    border: 3px solid black;
+
+    margin-left: 244px;
+    margin-top: -2px;
+
+    background: rgb(241, 241, 234);
+}
+
+#tijd-ns {
+    position: absolute;
+
+    width: 240px;
+    height: 50px;
+    border: 3px solid black;
+
+    margin-left: -2px;
+    margin-top: -2px;
+
+    background: rgb(241, 241, 234);
+}
+
+#footer-tijd {
+    position: absolute;
+
+    width: 492.8px;
+    height: 17px;
+    /* border: 3px solid black; */
+
+    margin-left: -1px;
+    margin-top: 257px;
+
+    background: rgb(19, 7, 189);
+
+    color: white;
+    padding-left: 4px;
+    padding-bottom: 2px;
+}
+
+#footer-tijd2 {
+
+
+    width: 492.8px;
+    height: 17px;
+    /* border: 3px solid black; */
+
+    margin-left: -1px;
+    margin-top: 237px;
+
+    background: rgb(19, 7, 189);
+
+    color: white;
+    padding-left: 4px;
+    padding-bottom: 2px;
+}

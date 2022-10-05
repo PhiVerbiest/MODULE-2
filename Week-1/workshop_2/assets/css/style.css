@@ -1,0 +1,14 @@
+#square {
+    list-style-type: square;
+}
+
+#abc {
+    list-style-type: upper-alpha;
+}
+
+#none 
+
+li{
+    display: inline-block;
+    margin: 0 10px;
+}

@@ -14,205 +14,197 @@
 @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,100italic,100,300,300italic,400italic,500,500italic,700,700italic,800,800italic,900,900italic);
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 body {
     display: block;
     overflow-x: hidden;
 
-    margin: 0;
-    padding: 20px;
-
     font-family: 'Righteous', sans-serif;
-
-    box-sizing: border-box;
+    
     position: relative;
 
-    background-color: hsla(230,40%,50%,1);
+    background: rgba(51,50,46,1) 38%;
+}
+
+section {
+  display: flex;
+  align-items: center;
+
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
 }
 
 section #header {
     text-align: start;
 }
 
-#header header {
-    padding-left: 100px;
-}
-
-#header img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-
-    margin-bottom: 210px;
-    margin-left: -50px;
-}
-
 #header header h1 {
-    position: absolute;
-
     color: white;
     font-family: 'Righteous', serif;
-    font-size: 12em; 
-    text-shadow: .03em .03em 0 hsla(230,40%,50%,1);
+    font-size: 10em;
+    text-shadow: .03em .03em 0 #67568c;
 
-    padding-left: 200px;
-    padding-top: -400px;
-  }
-
-/* Hamburger Menu */
-
-a
-{
-  text-decoration: none;
-  color: #232323;
-  
-  transition: color 0.3s ease;
+    text-align: start;
+    
+    padding: 50px;
 }
 
-a:hover
-{
-  color: tomato;
+div #bill-gates img {
+  margin-bottom: 100px;
+
+  width: 1600px;
+  height: 400px;
+
+  object-fit: cover;
 }
 
-#menuToggle
-{
-  display: block;
-  position: absolute;
-  top: 50px;
-  right: 50px;
-  
-  z-index: 1;
-  
-  -webkit-user-select: none;
-  user-select: none;
+#inleiding {
+
+  padding-right: 100px;
+
+  justify-content: end;
 }
 
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  
-  cursor: pointer;
-  
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-  
-  -webkit-touch-callout: none;
-}
-
-/*
- * Just a quick hamburger
- */
-#menuToggle span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  
-  background: #cdcdcd;
-  border-radius: 3px;
-  
-  z-index: 1;
-  
-  transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
-
-/*
- * But let's hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  opacity: 1;
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu
-{
-  position: absolute;
+#inleiding img {
   width: 300px;
-  margin: -100px 0 0 0;
+  height: 350px;
+}
+
+div #inleiding-text {
+  position: absolute;
+
+  justify-content: center;
+  text-align: start;
+
+  color: white;
+
+  width: 900px;
+  height: 100vh;
+
   padding: 50px;
-  padding-top: 125px;
-  right: -100px;
-  
-  background: #ededed;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  
-  transform-origin: 0% 0%;
-  transform: translate(100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+  margin-right: 500px;
+  margin-top: 380px;
 }
 
-#menu li
-{
-  padding: 10px 0;
-  font-size: 22px;
+div #middenstuk-text {
+  position: absolute;
+
+  justify-content: center;
+  text-align: start;
+
+  color: white;
+
+  width: 900px;
+  height: 100vh;
+
+  padding: 50px;
+
+  margin-right: 500px;
+  margin-top: 100px;
 }
 
-/*
- * And let's fade it in from the left
- */
-#menuToggle input:checked ~ ul
-{
-  transform: none;
-  opacity: 1;
+#middenstuk {
+
+  padding-right: 100px;
+
+  justify-content: end;
 }
 
-@media screen and (max-width: 768px) {
-  #menu {
-    transform: none;
-    opacity: 0;
+#middenstuk img {
+  width: 430px;
+  height: 450px;
 
-    transition: opacity 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-  }
+  object-fit: cover;
 }
+
+div nav {
+  display: flex;
+  align-items: flex-end;
+  position: fixed;
+
+  margin-top: 40px;
+  margin-left: 1150px;
+}
+
+div nav a, header nav span {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  z-index: 1;
+  width: 80px;
+  padding: 8px 0px;
+  text-align: center;
+  font-weight: bold;
+  transition: left .3s ease 0s;
+}
+
+div nav span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #67568c;
+  height: 100%;
+  z-index: 0;
+  border-radius: 8px;
+}
+
+div nav a:nth-of-type(1):hover ~ span {
+  left: 0px;
+}
+
+div nav a:nth-of-type(2):hover ~ span {
+  left: 80px;
+}
+
+div nav a:nth-of-type(3):hover ~ span {
+  left: 160px;
+}
+
+div nav a:nth-of-type(4):hover ~ span {
+  left: 240px;
+}
+
+div nav a:nth-of-type(5):hover ~ span {
+  left: 320px;
+}
+
+#footer #footer-text {
+  position: absolute;
+
+  justify-content: center;
+  text-align: start;
+
+  color: white;
+
+  width: 900px;
+  height: 100vh;
+
+  padding: 50px;
+
+  margin-right: 500px;
+  margin-top: 200px;
+}
+
+#footer img {
+  width: 500px;
+  height: 350px;
+}
+
+#footer {
+  padding-right: 100px;
+  margin-bottom: 50px;
+  justify-content: end;
+}
+
 

@@ -1,0 +1,22 @@
+table {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.kop td {
+    padding: 5px;
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+.wit-kleur {
+    background-color: white;
+}
+
+.grijs-kleur {
+    background-color: #c9c9c9;
+}
+
+.blauw-kleur {
+    background-color: #90c3d4;
+}

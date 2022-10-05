@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulieren</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Velden voor een HTML-Formulier</h1>
+        <form>
+            <fieldset>
+                <Legend><h2>Tekstvelden</h2></Legend>
+                <p><label for="voornaam">Voornaam</label><input id="voornaam" type="text" name="Voornaam"></p>
+                <p><label for="achternaam">Achternaam</label><input type="text" name="Achternaam"></p>
+                <p><label for="password">Wachtwoord</label><input type="password" name="pwd"></p>
+            </fieldset>
+
+            <fieldset>
+                <legend><h2>Radio Buttons</h2></legend>
+                <p><label for="man">Man</label><input type="radio" name="geslacht" id="man"></p>
+                <p><label for="vrouw">Vrouw</label><input type="radio" name="geslacht" id="vrouw"></p>
+            </fieldset>
+
+            <fieldset>
+                <legend><h2>Checkbox</h2></legend>
+                <p><label for="fiets">Fiets</label></p><input type="checkbox" name="vehicle" value="fiets">
+                <p><label for="auto">Auto</label><input type="checkbox" name="vehicle" value="auto"></p>
+            </fieldset>
+
+            <fieldset>
+                <legend><h2>Dropdownlist</h2></legend>
+                <label for="balletdanseressen"><select name="Balletdanseressen">
+                    <option value="Martha Graham">Martha Graham</option>
+                <option value="Carlotta Grisi">Carlotta Grisi</option>
+                <option value="Agrippina Vaganova">Agrippina Vaganova</option>
+                <option value="Natalie Portman">Natalie Portman</option>
+                </select></label>    
+            </fieldset>
+                
+            <fieldset>
+                <legend><h2>Textarea</h2></legend>
+            <p><label for="textarea"></label><textarea name="opmerkingen" cols="25" rows="7"></textarea></p>
+
+            <h2>Submit knop</h2>
+            <p><input type="submit" value="Verzenden"></p>
+            </fieldset>
+
+        </form>
+    </div>
+</body>
+</html>

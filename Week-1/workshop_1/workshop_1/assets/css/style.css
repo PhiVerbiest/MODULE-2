@@ -44,6 +44,14 @@ section {
   scroll-snap-align: start;
 }
 
+section h2 {
+  color: white;
+  font-family: 'Righteous', serif;
+  font-size: 3.5em;
+  text-shadow: .03em .03em 0 #67568c;
+  padding-bottom: 10px;
+}
+
 section #header {
     text-align: start;
 }
@@ -94,7 +102,7 @@ div #inleiding-text {
   padding: 50px;
 
   margin-right: 500px;
-  margin-top: 380px;
+  margin-top: 250px;
 }
 
 div #middenstuk-text {
@@ -111,7 +119,7 @@ div #middenstuk-text {
   padding: 50px;
 
   margin-right: 500px;
-  margin-top: 100px;
+  margin-top: 10px;
 }
 
 #middenstuk {
@@ -193,7 +201,7 @@ div nav a:nth-of-type(5):hover ~ span {
   padding: 50px;
 
   margin-right: 500px;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 #footer img {
@@ -203,7 +211,7 @@ div nav a:nth-of-type(5):hover ~ span {
 
 #footer {
   padding-right: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   justify-content: end;
 }
 

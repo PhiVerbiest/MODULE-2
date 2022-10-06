@@ -1,11 +1,40 @@
+html, body {
+    max-width: 60%;
+
+    margin-left: 250px;
+
+    background-color: #e0ddee;
+    color: #3a3671;
+}
+
+h1 {
+    text-align: center;
+
+    margin-right: 220px;
+
+    width: 500px;
+}
+
+#text label{
+    text-align: right;
+}
+
+
+#text p {
+    margin-left: -90px;
+}
+
+
 form {
     font-family: Arial, Helvetica, sans-serif;
+
+    width: 430px;
 }
 
 label {
     float: left;
-    width: 100px;
-    text-align: right;
+    width: 200px;
+    text-align: start;
     margin-right: 15px;
 }
 
@@ -16,3 +45,92 @@ label {
     padding: 10px 10px 10px 10px;
     margin-left: 200px;
 }
+
+#geslacht input{
+    margin-left: -150px;
+}
+
+#vehicle input {
+    margin-left: -235px;
+}
+
+#vehicle label {
+    margin-left: 20px;
+}
+
+
+
+#voornaam-1 {
+    position: absolute;
+    padding-left: 10px;
+    margin-left: -195px;
+
+
+    color: gray;
+
+    width: 350px;
+    height: 50px;
+}
+
+#e-mail {
+    position: absolute;
+    margin-top: 80px;
+    padding-left: 10px;
+    margin-left: -195px;
+
+    color: gray;
+
+    width: 350px;
+    height: 50px;
+}
+
+#achternaam {
+    position: absolute;
+    padding-left: 10px;
+    margin-left: 195px;
+
+    color: gray;
+
+    width: 350px;
+    height: 50px;
+}
+
+#website {
+    position: absolute;
+    padding-left: 10px;
+    margin-left: 195px;
+
+    margin-top: 80px;
+
+    color: gray;
+
+    width: 350px;
+    height: 50px;
+}
+
+#bericht-2 {
+    padding-top: 20px;
+    margin-left: -195px;
+    margin-top: 155px;
+
+    color: gray;
+}
+
+div #bericht {
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+#verstuur {
+    width: 200px;
+    height: 35px;
+
+    margin-left: 80px;
+
+    color: greenyellow;
+    border-color: greenyellow;
+}
+
+
+
+

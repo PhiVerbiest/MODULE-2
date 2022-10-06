@@ -11,23 +11,23 @@
     <div id="container">
         <h1>Velden voor een HTML-Formulier</h1>
         <form>
-            <fieldset>
+            <fieldset id="text">
                 <Legend><h2>Tekstvelden</h2></Legend>
                 <p><label for="voornaam">Voornaam</label><input id="voornaam" type="text" name="Voornaam"></p>
                 <p><label for="achternaam">Achternaam</label><input type="text" name="Achternaam"></p>
                 <p><label for="password">Wachtwoord</label><input type="password" name="pwd"></p>
             </fieldset>
 
-            <fieldset>
+            <fieldset id="geslacht">
                 <legend><h2>Radio Buttons</h2></legend>
                 <p><label for="man">Man</label><input type="radio" name="geslacht" id="man"></p>
                 <p><label for="vrouw">Vrouw</label><input type="radio" name="geslacht" id="vrouw"></p>
             </fieldset>
 
-            <fieldset>
+            <fieldset id="vehicle">
                 <legend><h2>Checkbox</h2></legend>
-                <p><label for="fiets">Fiets</label></p><input type="checkbox" name="vehicle" value="fiets">
-                <p><label for="auto">Auto</label><input type="checkbox" name="vehicle" value="auto"></p>
+                <p><input type="checkbox" name="vehicle" value="fiets"><label for="fiets">Ik heb een fiets</label></p>
+                <p><input type="checkbox" name="vehicle" value="auto"><label for="auto">Ik heb een auto</label></p>
             </fieldset>
 
             <fieldset>
@@ -42,12 +42,26 @@
                 
             <fieldset>
                 <legend><h2>Textarea</h2></legend>
-            <p><label for="textarea"></label><textarea name="opmerkingen" cols="25" rows="7"></textarea></p>
+            <p><label for="textarea"></label><textarea name="opmerkingen" cols="30" rows="10"></textarea></p>
 
             <h2>Submit knop</h2>
             <p><input type="submit" value="Verzenden"></p>
             </fieldset>
+        </form>
 
+        <form>
+            <h2>Stuur een Bericht</h2>
+            <div id="bericht">
+                <input id="voornaam-1" type="text" onfocus="this.value=''" name="Voornaam" value="Voornaam*">
+                <input id="achternaam" type="text" onfocus="this.value=''" name="Achternaam" value="Achternaam*">
+
+                <input id="e-mail" type="text" onfocus="this.value=''" name="Voornaam" value="E-Mailadress*">
+                <input id="website" type="text" onfocus="this.value=''" name="Achternaam" value="Website*">
+
+                <label for="textarea"></label><textarea name="opmerkingen" cols="100" rows="15" id="bericht-2" onfocus="this.value=''">Bericht*</textarea>
+
+                <p><input id="verstuur" type="submit" value="Verstuur"></p> 
+            </div>
         </form>
     </div>
 </body>

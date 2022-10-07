@@ -1,0 +1,1 @@
+Als je PHP wilt openen moet je het in de XAMPP folder openen dus zet "webshop_5" dus in htdocs zodat het werkt.

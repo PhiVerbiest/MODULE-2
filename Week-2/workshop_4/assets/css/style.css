@@ -15,10 +15,13 @@ div {
 }
 
 #header img {
-    width: 390px;
-    height: 120px;
+    width: 530px;
+    height: 200px;
 
-    object-fit: fill;
+    margin-top: -50px;
+    margin-left: -100px;
+
+    object-fit: contain;
 }
 
 #sidebar {
@@ -26,6 +29,47 @@ div {
     height: 500px;
     float: left;
 }
+
+#boxEen {
+    height: 50px;
+}
+
+#boxTwee {
+    width: 50px;
+    height: 50px;
+}
+
+#boxDrie {
+    width: 50px;
+    height: 50px;
+
+    margin-top: -0px;
+    float: right;
+}
+
+#boxVier {
+    height: 75px;
+    clear: right;
+}
+
+#boxVijf {
+    width: 100px;
+    height: 100px;
+}
+
+#boxZes {
+    width: 100px;
+    height: 100px;
+    float: right;
+    margin-top: -130px;
+}
+
+#boxZeven {
+    width: 100px;
+    height: 10px;
+    float: right;
+}
+
 
 #content {
     width: 670px;

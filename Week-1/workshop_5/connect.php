@@ -25,7 +25,7 @@
     if ($conn->connect_error){
         die('Connection Failed  : '.$conn->connect_error);
     }else{
-        $stmt = $conn->prepare("insert into test(voornaam, achternaam, email, website, opmerkingen)
+        $stmt = $conn->prepare("insert into contact(voornaam, achternaam, email, website, opmerkingen)
         values(?, ?, ?, ?, ?)");
         $stmt->bind_param("sssss",$voornaam, $achternaam, $email, $website, $opmerkingen);
         $stmt->execute();

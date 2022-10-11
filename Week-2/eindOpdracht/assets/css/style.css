@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: greenyellow;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.kaart-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 147px;
+    height: 206px;
+
+    border-radius: 5%;
+
+    background-color: white;
+}
+
+.klaver-right-left {
+    position: absolute;
+
+    width: 16px;
+    height: 16px;
+    
+    left: 0;
+    top: 0;
+}
+
+.kaart-1 #img-1 {
+    width: 60px;
+    height: 64px;
+}
+
+.kaart-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 147px;
+    height: 206px;
+
+    border-radius: 5%;
+
+    background-color: white;
+}
+
+.kaart-2 #img-2 {
+    position: absolute;
+    width: 60px;
+    height: 64px;
+}
+
+.kaart-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 147px;
+    height: 206px;
+
+    border-radius: 5%;
+
+    background-color: white;
+}
+
+.kaart-3 #img-3 {
+    width: 60px;
+    height: 64px;
+}
+
+.kaart-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 147px;
+    height: 206px;
+
+    border-radius: 5%;
+
+    background-color: white;
+}
+
+.kaart-4 #img-4 {
+    width: 60px;
+    height: 64px;
+}

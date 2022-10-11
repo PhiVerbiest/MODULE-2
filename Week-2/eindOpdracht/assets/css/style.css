@@ -1,64 +1,68 @@
+@import url('http://fonts.cdnfonts.com/css/playing-cards');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap%27i');
+
 * {
     margin: 0;
+
+    font-family: 'playing-cards', sans-serif;
+    font-size:  22px;
 }
 
 body {
     background-color: greenyellow;
+    padding: 20px;
 }
 
 #container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.kaart-1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.AandIcon {
+    position: relative;
 
-    width: 147px;
-    height: 206px;
-
-    border-radius: 5%;
-
-    background-color: white;
+    left: -88px;
+    top: -79px;
 }
 
-.klaver-right-left {
-    position: absolute;
+#A-normal {
+    padding: 2px;
+    margin-right: 5px;
+}
+
+#A-Reverse {
+    transform: scale(-1, 1);
+    transform: scale(1, -1);
+
+    padding: 2px;
+}
+
+#A-ReverseImg {
+    transform: scale(-1, 1);
+    transform: scale(1, -1);
+}
+
+.AandIcon-Reverse {
+    position: relative;
+
+    bottom: -75px;
+    left: 7px;
+}
+
+.groteKaart {
 
     width: 16px;
-    height: 16px;
-    
-    left: 0;
-    top: 0;
+    height: 19px;
 }
 
-.kaart-1 #img-1 {
-    width: 60px;
-    height: 64px;
-}
-
-.kaart-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 147px;
-    height: 206px;
-
-    border-radius: 5%;
-
-    background-color: white;
-}
-
-.kaart-2 #img-2 {
+.p {
     position: absolute;
-    width: 60px;
-    height: 64px;
+    left: 5px;
+    top: -60px;
 }
 
-.kaart-3 {
+/* Klaveren A, */
+.klaveren-A {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,15 +75,51 @@ body {
     background-color: white;
 }
 
-.kaart-3 #img-3 {
+#img-1 {
+    margin-left: 30px;
+}
+
+.klaveren-A #img-1 {
     width: 60px;
     height: 64px;
 }
 
-.kaart-4 {
+/* Harten A, */
+
+.harten-A {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: relative;
+
+    width: 147px;
+    height: 206px;
+
+    border-radius: 5%;
+
+    background-color: white;
+
+    color: red;
+}
+
+#img-2 {
+    margin-left: 28px;
+}
+
+.harten-A #img-2 {
+    width: 60px;
+    height: 64px;
+}
+
+/* Schoppen A, */
+
+.schoppen-A {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
 
     width: 147px;
     height: 206px;
@@ -89,7 +129,39 @@ body {
     background-color: white;
 }
 
-.kaart-4 #img-4 {
+#img-3 {
+    margin-left: 28px;
+}
+
+.schoppen-A #img-3 {
+    width: 60px;
+    height: 64px;
+}
+
+/* Ruiten A, */
+
+.ruiten-A {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    width: 147px;
+    height: 206px;
+
+    border-radius: 5%;
+
+    background-color: white;
+
+    color: red;
+}
+
+#img-4 {
+    margin-left: 28px;
+}
+
+.ruiten-A #img-4 {
     width: 60px;
     height: 64px;
 }

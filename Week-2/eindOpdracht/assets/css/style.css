@@ -26,7 +26,14 @@ section {
 .AandIcon {
     position: relative;
 
-    left: -83px;
+    left: -90px;
+    top: -78px;
+}
+
+.AandIcon-10 {
+    position: relative;
+
+    left: -85px;
     top: -78px;
 }
 
@@ -47,7 +54,7 @@ section {
     position: relative;
 
     bottom: -75px;
-    left: -2px;
+    left: 8px;
 }
 
 .groteKaart {

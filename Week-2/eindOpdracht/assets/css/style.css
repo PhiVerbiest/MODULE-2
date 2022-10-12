@@ -1,5 +1,19 @@
 @import url('http://fonts.cdnfonts.com/css/playing-cards');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap%27i');
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Karla);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600italic,700italic,800,800italic,700,600);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,200,100,300,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300italic,300,400italic,600,600italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,200,100,300,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300italic,300,400italic,600,600italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Catamaran:400,100,200,300,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Yantramanav:400,100,300,500,700,900);
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,100italic,100,300,300italic,400italic,500,500italic,700,700italic,800,800italic,900,900italic);
 
 * {
     margin: 0;
@@ -12,16 +26,34 @@ body {
     background-color: greenyellow;
 }
 
+/* Kaart Deck Info */
+
+h1 a {
+    text-align: center;
+    font-weight: 600;
+    font-size: 100px;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-shadow: 3px 3px #333;
+    float: right;
+    padding-right: 124px;
+    text-decoration: none;
+}
+
+/* De 4 Kaart sections */
+
 section {
     display: flex;
     justify-content: center;
     position: relative;
     margin: 10px auto;
-    padding: 10px 30px;
+    padding: 10px 50px;
 
     box-shadow: 2px 2px 8px 3px #333;
+    clear: right;
 }
 
+/* Het uitlijnen van de klaver, harten, ruiten & schoppen en nummers en letters */
 
 .AandIcon {
     position: relative;
@@ -33,21 +65,22 @@ section {
 .AandIcon-10 {
     position: relative;
 
-    left: -85px;
+    left: -40px;
     top: -78px;
 }
 
+.AandIcon-Reverse {
+    position: relative;
 
-#A-Reverse {
-    transform: scale(-1, );
-    transform: scale(1, -1);
-
-    padding: 2px;
+    bottom: -75px;
+    left: 8px;
 }
 
-#A-ReverseImg {
-    transform: scale(-1, 1);
-    transform: scale(1, -1);
+.AandIcon-Reverse-10 {
+    position: relative;
+
+    bottom: -75px;
+    left: 40px;
 }
 
 .AandIcon-Reverse {
@@ -62,10 +95,28 @@ section {
     height: 16px;
 }
 
-.p {
-    position: absolute;
-    left: 5px;
-    top: -60px;
+.groteKaart-10 {
+    width: 16px;
+    height: 16px;
+
+    margin-left: 10px;
+}
+
+/* Dit flipt de onderste text & image */
+
+#A-Reverse {
+    -webkit-transform:rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+
+    padding: 2px;
+}
+
+#A-ReverseImg {
+    transform: scale(-1, 1);
+    transform: scale(1, -1);
 }
 
 /* Klaveren A, */
@@ -111,7 +162,17 @@ section {
     margin-left: 28px;
 }
 
+#img-10 {
+    position: absolute;
+    right: 45px;
+}
+
 .klaveren-A #img-1 {
+    width: 60px;
+    height: 64px;
+}
+
+.klaveren #img-10 {
     width: 60px;
     height: 64px;
 }
@@ -119,6 +180,18 @@ section {
 .klaveren #img-1 {
     width: 60px;
     height: 64px;
+}
+
+.klaveren-A:hover {
+    transform: scale(1.1);
+    margin-top: -100px;
+    z-index:20;
+}
+
+.klaveren:hover {
+    transform: scale(1.1);
+    margin-top: -100px;
+    z-index:20;
 }
 
 /* Harten A, */
@@ -174,9 +247,36 @@ section {
     height: 64px;
 }
 
+.harten-A #img-10 {
+    width: 60px;
+    height: 64px;
+}
+
+.harten-A #img-2 {
+    width: 60px;
+    height: 64px;
+}
+
 .harten #img-2 {
     width: 60px;
     height: 64px;
+}
+
+.harten #img-10 {
+    width: 60px;
+    height: 64px;
+}
+
+.harten-A:hover {
+    transform: scale(1.1);
+    margin-top: -100px;
+    z-index:20;
+}
+
+.harten:hover {
+    transform: scale(1.1);
+    margin-top: -100px;
+    z-index:20;
 }
 
 /* Schoppen A, */
@@ -228,9 +328,31 @@ section {
     height: 64px;
 }
 
+.schoppen-A #img-10 {
+    width: 60px;
+    height: 64px;
+}
+
 .schoppen #img-3 {
     width: 60px;
     height: 64px;
+}
+
+.schoppen #img-10 {
+    width: 60px;
+    height: 64px;
+}
+
+.schoppen-A:hover {
+    transform: scale(1.1);
+    margin-top: -100px;
+    z-index:20;
+}
+
+.schoppen:hover {
+    transform: scale(1.1);
+    margin-top: -100px;
+    z-index:20;
 }
 
 /* Ruiten A, */
@@ -286,7 +408,28 @@ section {
     height: 64px;
 }
 
+.ruiten-A #img-10 {
+    width: 60px;
+    height: 64px;
+}
+
 .ruiten #img-4 {
     width: 60px;
     height: 64px;
+}
+
+.ruiten #img-10 {
+    width: 60px;
+    height: 64px;
+}
+
+.ruiten-A:hover {
+    transform: scale(1.1);
+    z-index:20;
+}
+
+.ruiten:hover {
+    transform: scale(1.1);
+    margin-top: -100px;
+    z-index:20;
 }

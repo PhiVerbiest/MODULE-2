@@ -135,8 +135,6 @@ section {
 .whiteCard:hover {
     transform: scale(1.1);
     z-index:20;
-
-    visibility: hidden;
 }
 
 #clickMe {
@@ -458,4 +456,3 @@ section {
     margin-top: -100px;
     z-index:20;
 }
-  

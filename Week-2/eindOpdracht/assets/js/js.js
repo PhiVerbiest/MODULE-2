@@ -1,11 +1,28 @@
-const toggleBtn = document.querySelector('#toggleBtn');
-const div1 = document.querySelector('#div1');
-const div2 = document.querySelector('#div2');
+function onDragStart(event) {
+    event
+      .dataTransfer
+      .setData('text/plain', event.target.id);
 
-toggleBtn.addEventListener('click'), () => {
-    if (div1.style.visibility === 'hidden')  {
-        div1.style.visibility = 'visible';
-    } else {
-        div1.style.visibility = 'hidden';
-    }
-}
+      event
+      .currentTarget
+      .style
+      .background = 'white';
+  }
+
+  function onDragOver(event) {
+    event.preventDefault();
+  }
+
+function onDrop(event) {
+    const id = event
+      .dataTransfer
+      .getData('text');
+
+      const draggableElement = document.getElementById(id);
+      const dropzone = event.target;
+      dropzone.appendChild(draggableElement);
+
+      event
+      .dataTransfer
+      .clearData();
+  }

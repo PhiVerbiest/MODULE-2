@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/js.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Kaarten, Eindoprdacht</title>
   </head>
   <body>
-    
+
 <!-- Text kaart deck info -->
 
     <h1><a href="https://github.com/PhiVerbiest">Kaart Deck INFO</a></h1>
@@ -19,7 +21,7 @@
 
     <section>
 
-        <div class="klaveren-A">
+        <div class="klaveren-A" id="klaveren-A">
         <img id="img-1" src="./assets/img/image-man.png" alt="image-man" />
         <div class="AandIcon">
           <div id="A-normal">A</div>
@@ -31,7 +33,7 @@
         </div>
       </div>
 
-        <div class="klaveren">
+        <div class="klaveren" id="klaveren-2">
         <img id="img-1" src="./assets/img/image-man.png" alt="image-man" />
         <div class="AandIcon">
           <div id="A-normal">2</div>
@@ -43,7 +45,7 @@
         </div>
       </div>
 
-        <div class="klaveren">
+        <div class="klaveren" id="klaveren-3">
         <img id="img-1" src="./assets/img/image-man.png" alt="image-man" />
         <div class="AandIcon">
           <div id="A-normal">3</div>
@@ -55,7 +57,7 @@
         </div>
       </div>
 
-        <div class="klaveren">
+        <div class="klaveren" id="klaveren-4">
         <img id="img-1" src="./assets/img/image-man.png" alt="image-man" />
         <div class="AandIcon">
           <div id="A-normal">4</div>
@@ -67,7 +69,7 @@
         </div>
       </div>
 
-        <div class="klaveren">
+        <div class="klaveren" id="klaveren-5">
         <img id="img-1" src="./assets/img/image-man.png" alt="image-man" />
         <div class="AandIcon">
           <div id="A-normal">5</div>
@@ -79,7 +81,7 @@
         </div>
       </div>
 
-        <div class="klaveren">
+        <div class="klaveren" id="klaveren-6">
         <img id="img-1" src="./assets/img/image-man.png" alt="image-man" />
         <div class="AandIcon">
           <div id="A-normal">6</div>
@@ -91,7 +93,7 @@
         </div>
       </div>
       
-        <div class="klaveren">
+        <div class="klaveren" id="klaveren-7">
         <img id="img-1" src="./assets/img/image-man.png" alt="image-man" />
         <div class="AandIcon">
           <div id="A-normal">7</div>
@@ -103,7 +105,7 @@
         </div>
       </div>
 
-        <div class="klaveren">
+        <div class="klaveren" id="klaveren-8">
         <img id="img-1" src="./assets/img/image-man.png" alt="image-man" />
         <div class="AandIcon">
           <div id="A-normal">8</div>
@@ -115,7 +117,7 @@
         </div>
       </div>
 
-        <div class="klaveren">
+        <div class="klaveren" id="klaveren-9">
         <img id="img-1" src="./assets/img/image-man.png" alt="image-man" />
         <div class="AandIcon">
           <div id="A-normal">9</div>
@@ -127,7 +129,7 @@
         </div>
       </div>
 
-        <div class="klaveren">
+        <div class="klaveren" id="klaveren-10">
         <img id="img-10" src="./assets/img/image-man.png" alt="image-man" />
         <div class="AandIcon-10">
           <div id="A-normal">10</div>
@@ -139,7 +141,7 @@
         </div>
       </div>
 
-        <div class="klaveren">
+        <div class="klaveren" id="klaveren-J">
         <img id="img-1" src="./assets/img/image-man.png" alt="image-man" />
         <div class="AandIcon">
           <div id="A-normal">J</div>
@@ -151,7 +153,7 @@
         </div>
       </div>
 
-        <div class="klaveren">
+        <div class="klaveren" id="klaveren-Q">
         <img id="img-1" src="./assets/img/image-man.png" alt="image-man" />
         <div class="AandIcon">
           <div id="A-normal">Q</div>
@@ -163,7 +165,7 @@
         </div>
       </div>
 
-        <div class="klaveren">
+        <div class="klaveren" id="klaveren-K">
         <img id="img-1" src="./assets/img/image-man.png" alt="image-man" />
         <div class="AandIcon">
           <div id="A-normal">K</div>
@@ -181,7 +183,7 @@
 
     <section>
 
-      <div class="harten-A">
+      <div class="harten-A" id="harten-A">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-2" />
         <div class="AandIcon">
           <div id="A-normal">A</div>
@@ -193,7 +195,7 @@
         </div>
       </div>
 
-      <div class="harten" id="hidden">
+      <div class="harten" id="harten-2">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-2" />
         <div class="AandIcon">
           <div id="A-normal">2</div>
@@ -205,7 +207,7 @@
         </div>
       </div>
 
-      <div class="harten" id="hidden">
+      <div class="harten" id="harten-3">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-2" />
         <div class="AandIcon">
           <div id="A-normal">3</div>
@@ -217,7 +219,7 @@
         </div>
       </div>
 
-      <div class="harten" id="hidden">
+      <div class="harten" id="harten-4">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-2" />
         <div class="AandIcon">
           <div id="A-normal">4</div>
@@ -229,7 +231,7 @@
         </div>
       </div>
 
-      <div class="harten" id="hidden">
+      <div class="harten" id="harten-5">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-2" />
         <div class="AandIcon">
           <div id="A-normal">5</div>
@@ -241,7 +243,7 @@
         </div>
       </div>
 
-      <div class="harten" id="hidden">
+      <div class="harten" id="harten-6">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-2" />
         <div class="AandIcon">
           <div id="A-normal">6</div>
@@ -253,7 +255,7 @@
         </div>
       </div>
 
-      <div class="harten" id="hidden">
+      <div class="harten" id="harten-7">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-2" />
         <div class="AandIcon">
           <div id="A-normal">7</div>
@@ -265,7 +267,7 @@
         </div>
       </div>
 
-      <div class="harten" id="hidden">
+      <div class="harten" id="harten-8">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-2" />
         <div class="AandIcon">
           <div id="A-normal">8</div>
@@ -277,7 +279,7 @@
         </div>
       </div>
 
-      <div class="harten" id="hidden">
+      <div class="harten" id="harten-9">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-2" />
         <div class="AandIcon">
           <div id="A-normal">9</div>
@@ -289,7 +291,7 @@
         </div>
       </div>
 
-      <div class="harten" id="hidden">
+      <div class="harten" id="harten-10">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-10" />
         <div class="AandIcon-10">
           <div id="A-normal">10</div>
@@ -301,7 +303,7 @@
         </div>
       </div>
 
-      <div class="harten" id="hidden">
+      <div class="harten" id="harten-J">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-2" />
         <div class="AandIcon">
           <div id="A-normal">J</div>
@@ -313,7 +315,7 @@
         </div>
       </div>
 
-      <div class="harten" id="hidden">
+      <div class="harten" id="harten-Q">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-2" />
         <div class="AandIcon">
           <div id="A-normal">Q</div>
@@ -325,7 +327,7 @@
         </div>
       </div>
 
-      <div class="harten" id="hidden">
+      <div class="harten" id="harten-K">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-2" />
         <div class="AandIcon">
           <div id="A-normal">K</div>
@@ -342,7 +344,7 @@
 <!-- Section schoppen kaarten -->
 
     <section>
-      <div class="schoppen-A">
+      <div class="schoppen-A" id="schoppen-A">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-3" />
         <div class="AandIcon">
           <div id="A-normal">A</div>
@@ -354,7 +356,7 @@
         </div>
       </div>
 
-      <div class="schoppen">
+      <div class="schoppen" id="schoppen-2">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-3" />
         <div class="AandIcon">
           <div id="A-normal">2</div>
@@ -366,7 +368,7 @@
         </div>
       </div>
 
-      <div class="schoppen">
+      <div class="schoppen" id="schoppen-3">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-3" />
         <div class="AandIcon">
           <div id="A-normal">3</div>
@@ -378,7 +380,7 @@
         </div>
       </div>
 
-      <div class="schoppen">
+      <div class="schoppen" id="schoppen-4">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-3" />
         <div class="AandIcon">
           <div id="A-normal">4</div>
@@ -390,7 +392,7 @@
         </div>
       </div>
 
-      <div class="schoppen">
+      <div class="schoppen" id="schoppen-5">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-3" />
         <div class="AandIcon">
           <div id="A-normal">5</div>
@@ -402,7 +404,7 @@
         </div>
       </div>
 
-      <div class="schoppen">
+      <div class="schoppen" id="schoppen-6">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-3" />
         <div class="AandIcon">
           <div id="A-normal">6</div>
@@ -414,7 +416,7 @@
         </div>
       </div>
 
-      <div class="schoppen">
+      <div class="schoppen" id="schoppen-7">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-3" />
         <div class="AandIcon">
           <div id="A-normal">7</div>
@@ -426,7 +428,7 @@
         </div>
       </div>
 
-      <div class="schoppen">
+      <div class="schoppen" id="schoppen-8">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-3" />
         <div class="AandIcon">
           <div id="A-normal">8</div>
@@ -438,7 +440,7 @@
         </div>
       </div>
 
-      <div class="schoppen">
+      <div class="schoppen" id="schoppen-9">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-3" />
         <div class="AandIcon">
           <div id="A-normal">9</div>
@@ -450,7 +452,7 @@
         </div>
       </div>
 
-      <div class="schoppen">
+      <div class="schoppen" id="schoppen-10">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-10" />
         <div class="AandIcon-10">
           <div id="A-normal">10</div>
@@ -462,7 +464,7 @@
         </div>
       </div>
 
-      <div class="schoppen">
+      <div class="schoppen" id="schoppen-J">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-3" />
         <div class="AandIcon">
           <div id="A-normal">J</div>
@@ -474,7 +476,7 @@
         </div>
       </div>
 
-      <div class="schoppen">
+      <div class="schoppen" id="schoppen-Q">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-3" />
         <div class="AandIcon">
           <div id="A-normal">Q</div>
@@ -486,7 +488,7 @@
         </div>
       </div>
 
-      <div class="schoppen">
+      <div class="schoppen" id="schoppen-K">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-3" />
         <div class="AandIcon">
           <div id="A-normal">K</div>
@@ -504,7 +506,7 @@
 
     <section>
 
-      <div class="ruiten-A">
+      <div class="ruiten-A" id="ruiten-A">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-4" />
         <div class="AandIcon">
           <div id="A-normal">A</div>
@@ -516,7 +518,7 @@
         </div>
       </div>
 
-      <div class="ruiten">
+      <div class="ruiten" id="ruiten-2">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-4" />
         <div class="AandIcon">
           <div id="A-normal">2</div>
@@ -528,7 +530,7 @@
         </div>
       </div>
 
-      <div class="ruiten">
+      <div class="ruiten" id="ruiten-3">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-4" />
         <div class="AandIcon">
           <div id="A-normal">3</div>
@@ -540,7 +542,7 @@
         </div>
       </div>
       
-      <div class="ruiten">
+      <div class="ruiten" id="ruiten-4">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-4" />
         <div class="AandIcon">
           <div id="A-normal">4</div>
@@ -552,7 +554,7 @@
         </div>
       </div>
 
-      <div class="ruiten">
+      <div class="ruiten" id="ruiten-5">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-4" />
         <div class="AandIcon">
           <div id="A-normal">5</div>
@@ -564,7 +566,7 @@
         </div>
       </div>
 
-      <div class="ruiten">
+      <div class="ruiten" id="ruiten-6">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-4" />
         <div class="AandIcon">
           <div id="A-normal">6</div>
@@ -576,7 +578,7 @@
         </div>
       </div>
 
-      <div class="ruiten">
+      <div class="ruiten" id="ruiten-7">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-4" />
         <div class="AandIcon">
           <div id="A-normal">7</div>
@@ -588,7 +590,7 @@
         </div>
       </div>
 
-      <div class="ruiten">
+      <div class="ruiten" id="ruiten-8">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-4" />
         <div class="AandIcon">
           <div id="A-normal">8</div>
@@ -600,7 +602,7 @@
         </div>
       </div>
 
-      <div class="ruiten">
+      <div class="ruiten" id="ruiten-9">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-4" />
         <div class="AandIcon">
           <div id="A-normal">9</div>
@@ -612,7 +614,7 @@
         </div>
       </div>
 
-      <div class="ruiten">
+      <div class="ruiten" id="ruiten-10">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-10" />
         <div class="AandIcon-10">
           <div id="A-normal">10</div>
@@ -624,7 +626,7 @@
         </div>
       </div>
 
-      <div class="ruiten">
+      <div class="ruiten" id="ruiten-J">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-4" />
         <div class="AandIcon">
           <div id="A-normal">J</div>
@@ -636,7 +638,7 @@
         </div>
       </div>
 
-      <div class="ruiten">
+      <div class="ruiten" id="ruiten-Q">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-4" />
         <div class="AandIcon">
           <div id="A-normal">Q</div>
@@ -648,7 +650,7 @@
         </div>
       </div>
 
-      <div class="ruiten">
+      <div class="ruiten" id="ruiten-K">
         <img src="./assets/img/image-man.png" alt="image-man" id="img-4" />
         <div class="AandIcon">
           <div id="A-normal">K</div>
@@ -661,7 +663,6 @@
       </div>
 
     </section>
-
     </div>
   </body>
 </html>

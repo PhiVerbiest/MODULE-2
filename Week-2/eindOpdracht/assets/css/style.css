@@ -24,6 +24,9 @@
 
 body {
     background-color: greenyellow;
+
+    width: 1170px;
+    margin: 0 auto;
 }
 
 /* Kaart Deck Info */
@@ -35,7 +38,7 @@ h1 a {
     font-family: 'Quicksand', sans-serif;
     color: white;
     text-shadow: 3px 3px #333;
-    float: right;
+    float: inline-start;
     padding-right: 124px;
     text-decoration: none;
 }
@@ -49,7 +52,6 @@ section {
     margin: 10px auto;
     padding: 10px 50px;
 
-    box-shadow: 2px 2px 8px 3px #333;
     clear: right;
 }
 
@@ -73,7 +75,7 @@ section {
     position: relative;
 
     bottom: -75px;
-    left: 8px;
+    left: 4px;
 }
 
 .AandIcon-Reverse-10 {
@@ -81,13 +83,6 @@ section {
 
     bottom: -75px;
     left: 40px;
-}
-
-.AandIcon-Reverse {
-    position: relative;
-
-    bottom: -75px;
-    left: 8px;
 }
 
 .groteKaart {
@@ -117,6 +112,35 @@ section {
 #A-ReverseImg {
     transform: scale(-1, 1);
     transform: scale(1, -1);
+}
+
+.whiteCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    width: 147px;
+    height: 206px;
+
+    border-radius: 5%;
+
+    background-color: white;
+    transition: all .5s;
+
+    box-shadow: 2px 2px 5px 3px #555;
+}
+
+.whiteCard:hover {
+    transform: scale(1.1);
+    z-index:20;
+
+    visibility: hidden;
+}
+
+#clickMe {
+    text-decoration: none;
 }
 
 /* Klaveren A, */
@@ -399,6 +423,7 @@ section {
     margin-left: -50px;
 }
 
+
 #img-4 {
     margin-left: 28px;
 }
@@ -433,3 +458,4 @@ section {
     margin-top: -100px;
     z-index:20;
 }
+  

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Coolblue</title>
+  </head>
+  <body>
+    <header>
+      <div id="circle">
+        <h3>cool<span>blue</span></h3>
+      </div>
+    </header>
+
+    <div class="gegevens">
+      <h3 class="tGegevens">JE GEGEVENS<span>.</span></h3>
+      <p class="tFactuur">Wat moet er op de factuur staan?</p>
+    </div>
+
+    <section>
+      <div>
+        <label id="bestelling" for="Type bestelling">Type bestelling</label>
+        <input type="radio" name="KlantType" placeholder="particulier" /><label
+          class="space"
+          for="particulier"
+        >
+          Particulier</label
+        >
+        <input type="radio" name="KlantType" placeholder="zakelijk" /><label
+          for="zakelijk"
+        >
+          Zakelijk</label
+        >
+      </div>
+      <div>
+        <label id="aanhef" for="Aanhef">Aanhef</label>
+        <input type="radio" name="Gender" value="Dhr." /><label
+          class="space"
+          for="Dhr."
+        >
+          Dhr.</label
+        >
+        <input type="radio" name="Gender" value="Mevr." /><label for="Mevr.">
+          Mevr.</label
+        >
+      </div>
+      <div>
+        <label id="naam" for="naam">Naam</label>
+        <input
+          class="tbNaam"
+          id="tbVoornaam"
+          type="text"
+          name="Voornaam"
+          placeholder="Voornaam"
+          onfocus="this.value=''"
+        />
+        <input
+          class="tbNaam"
+          id="tbTussenvoegsel"
+          type="text"
+          name="Tussenvoegsel"
+          placeholder="Tussenv."
+          onfocus="this.value=''"
+        />
+        <input
+          class="tbNaam"
+          id="tbAchternaam"
+          type="text"
+          name="Achternaam"
+          placeholder="Achternaam"
+          onfocus="this.value=''"
+        />
+      </div>
+      <div>
+        <label id="postcode" for="postcode">Postcode</label>
+        <input
+          id="tbPostcode"
+          type="text"
+          name="Postcode"
+          placeholder="1234AB"
+          onfocus="this.value=''"
+        />
+      </div>
+      <div>
+        <label id="huisNummer" for="huisnummer">Huisnummer</label>
+        <input
+          id="tbHuisnummer"
+          type="text"
+          name="Huisnummer"
+          placeholder="Nr."
+          onfocus="this.value=''"
+        />
+        <input
+          id="tbToevoeging"
+          type="text"
+          name="Toevoeging"
+          placeholder="Toev."
+          onfocus="this.value=''"
+        />
+      </div>
+      <div>
+        <label id="land" for="land">Land</label>
+        <label for="nederland">Nederland</label
+        ><label for="belgie"
+          ><a href="#" id="aBelgie">
+            <span>></span> In Belgie laten bezorgen</a
+          ></label
+        >
+      </div>
+      <div>
+        <label id="afleverAdres" for="afleverAdres"> Afleveradres</label>
+        <input
+          type="radio"
+          name="afleverAdres"
+          value="bovenstaandeAdres"
+        /><label class="space" for="bovenstaandeAdres">
+          Op bovenstaande adres bezorgen</label
+        >
+        <input type="radio" name="afleverAdres" value="andersAdres" /><label
+          for="andersAdres"
+        >
+          Op ander adres bezorgen</label
+        >
+      </div>
+      <div>
+        <span id="e-Mail"
+          ><i class="fa fa-question-circle"></i
+          ><label for="email"> E-mailadres</label></span
+        >
+        <input
+          id="tbEmail"
+          type="text"
+          name="emailadres"
+          onfocus="this.value=''"
+        />
+      </div>
+      <div>
+        <span id="telefoonNummer"
+          ><i class="fa fa-question-circle"></i
+          ><label for="telefoonNummer"> Telefoonnummer</label></span
+        >
+        <input
+          id="tbTelefoonNummer"
+          type="text"
+          name="telefoonnummer"
+          onfocus="this.value=''"
+        />
+      </div>
+      <div>
+        <span id="geboorteDatum"
+          ><i class="fa fa-question-circle"></i
+          ><label for="datum"> Geboortedatum</label></span
+        >
+        <input
+          id="dGeboorteDatum"
+          type="date"
+          name="geboortedatum"
+          placeholder="dd-mm-jjjj"
+        />
+      </div>
+      <div>
+        <span id="verzendwijzeFactuur"
+          ><i class="fa fa-question-circle"></i
+          ><label for="verzendwijzeFactuur"> Verzendwijze factuur</label></span
+        >
+        <input
+          id="rPerEmail"
+          type="radio"
+          name="factuur"
+          value="perEmail"
+        /><label class="space" for="factuur"> Factuur per e-mail</label>
+        <input
+          id="rGeprint"
+          type="radio"
+          name="factuur"
+          value="factuurGeprint"
+        /><label for="factuur"> Factuur geprint bij de bestelling</label>
+      </div>
+      <div>
+        <span id="nieuwsBrief"
+          ><i class="fa fa-question-circle"></i
+          ><label for="nieuwsBrief"> Nieuwsbrief</label></span
+        >
+        <input
+          id="cbNieuwsBrief"
+          type="checkbox"
+          name="nieuwsBrief"
+          value="Nieuwsbrief"
+        /><label for="textNieuwsbrief">
+          Ja, ik wil de Coolblue-nieuwsbrief met
+          <span id="cadeauBon"> €5,- cadeaubon </span>voor<br /><span
+            id="textBestelling"
+            >mijn volgende bestelling</span
+          >
+        </label>
+      </div>
+      <div>
+        <span id="kleurVerpakking"
+          ><i class="fa fa-question-circle"></i
+          ><label for="kleurVerpakking"> Kleur Verpakking</label></span
+        >
+        <input
+          id="cKleurVerpakking"
+          type="color"
+          name="kleur"
+          value="verpakking"
+        />
+      </div>
+    </section>
+    <div class="gegevens" id="orange-punt">
+      <h3 class="tGegevens">BEWAAR JE GEGEVENS<span>.</span></h3>
+      <p class="tFactuur" id="line-space">Handig voor de volgende keer.</p>
+    </div>
+    <section>
+      <div>
+        <span id="wachtwoord"
+          ><i class="fa fa-question-circle"></i
+          ><label for="wachtWoord"> Wachtwoord</label></span
+        >
+        <input
+          id="tbWachtwoord"
+          type="text"
+          name="wachtwoord"
+          onfocus="this.value=''"
+        />
+        <p id="wachtwoordKleur">
+          Minimaal 6 karakters. <br />
+          Verder doen we niet zo moeilijk.
+        </p>
+      </div>
+      <div>
+        <span id="wachtwoordBevestigen"
+          ><i class="fa fa-question-circle"></i
+          ><label for="wachtWoord"> Wachtwoord bevestigen</label></span
+        >
+        <input
+          id="tbWachtwoordBevestigen"
+          type="text"
+          name="wachtwoordBevestigen"
+          onfocus="this.value=''"
+        />
+      </div>
+      <div id="container-grayBox">
+        <input id="submit-Button" type="submit" value="Verder" />
+      </div>
+    </section>
+
+    <footer>
+      <div id="footer-container">
+        <div id="phone">
+            <img src="./assets/img/phone-png.png" alt="">
+        </div>
+        <div>
+            <p id="tekst-1">BEL 010 7988999<span>.</span></p>
+            <p id="tekst-2">Voor acute service!</p>
+
+            <p id="tekst-3">Onze klantenservice is nu open.</p>
+            <p id="tekst-4">Je kunt ons 7 dagen per week bereiken. Vandaag is</p>
+            <p id="tekst-5">de klantenservice tot 23.59 uur open.</p>
+        </div>
+        <div>
+            <p id="tekst-6">SERVICE<span>.</span></p>
+            <p id="tekst-7">Onderdeel van Coolblue.</p>
+
+            <p id="tekst-8">&check; Gratis verzenden & retourneren</p>
+            <p id="tekst-9">&check; Voor 23.59 uur besteld, morgen in huis</p>
+            <p id="tekst-10">&check; Track & Trace, volg je pakket</p>
+            <p id="tekst-11">&check; Statusupdates via e-mail</p>
+            <p id="tekst-12">&check; Winkels in Amsterdam, Eindhoven, Groningen,</p>
+            <p id="tekst-13">Rotterdam en Utrecht</p>
+        </div>
+      </div>
+    </footer>
+        <div id="white-container">
+            <div class="size" id="thuiswinkel"><img src="./assets/img/thuiswinkel.png" alt=""></div>
+            <div class="size" id="ideal"><img src="./assets/img/ideal.png" alt=""></div>
+            <div class="size" id="mastercard"><img src="./assets/img/mastercard.png" alt=""></div>
+            <div class="size" id="visa"><img src="./assets/img/visa.png" alt=""></div>
+            <div class="size" id="paypal"><img src="./assets/img/paypal.png" alt=""></div>
+            <div class="size" id="postnl"><img src="./assets/img/postnl.png" alt=""></div>
+        </div>
+  </body>
+</html>

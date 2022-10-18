@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 3 Formulieren</title>
+  </head>
+  <body>
+    <div id="container">
+      <form action="doelbestand.php" method="post">
+        Voornaam:
+        <input type="text" name="vnaam" placeholder="Voornaam" /><br />
+        Achternaam:
+        <input type="text" name="anaam" placeholder="Achternaam" /><br />
+        <input type="date" name="datum" placeholder="jouw geboortedatum" />
+        <input type="submit" /><br />
+
+        <input
+          type="datetime-local"
+          name="dateTime"
+          placeholder="datum tijd"
+        /><br />
+        <input type="time" name="tijd" placeholder="tijden" /><br />
+        <input type="week" name="weken" /><br />
+        <input type="month" name="maanden" placeholder="maand" /><br />
+
+        <input
+          id="country"
+          type="text"
+          name="country"
+          size="40"
+          list="countries"
+        />
+        <datalist id="countries">
+          <option value="Australia"></option>
+          <option value="Canada"></option>
+          <option value="Germany"></option>
+          <option value="France"></option>
+          <option value="United Kingdom"></option>
+          <option value="United States"></option></datalist
+        ><br />
+        <input type="number" /><br />
+        <input type="number" min="5" max="100" step="5" value="10" /><br />
+        <input type="e-mail" required /><br />
+        <input type="file" name="file" placeholder="bestand" /><br />
+        <input type="color" name="color" placeholder="kleur" /><br />
+        <input
+          type="range"
+          name="range"
+          placeholder="lengte"
+          min="1"
+          max="10"
+        />
+      </form>
+    </div>
+  </body>
+</html>

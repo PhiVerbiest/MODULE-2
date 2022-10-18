@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    width: 1920px;
+    height: auto;
+}
+
+header {
+    width: 2075px;
+    height: 70px;
+
+    background: #0090e3;
+}
+
+header #circle {
+    margin-left: 35px;
+
+    width: 105px;
+    height: 70px;
+    border-radius: 50px;
+
+    background: #fd6600;
+}
+
+header h3 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+header h3 span {
+    display: flex;
+    line-height: 12px;
+    position: relative;
+
+    margin-left: 25px;
+}
+
+section h3 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+section h3 span {
+    display: flex;
+    line-height: 12px;
+    position: relative;
+
+    margin-left: 25px;
+}
+
+input[type=text] {
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=date] {
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+  
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+#orange-punt span{
+    color: #fd6600;
+}
+
+
+.gegevens {
+    padding-top: 25px;
+    padding-left: 175px;
+}
+
+section {
+    padding-left: 278px;
+}
+
+i {
+    color: #41acf8;
+}
+
+#bestelling {
+    padding-right: 50px;
+    line-height: 42px;
+}
+
+.space {
+    padding-right: 10px;
+}
+
+#aanhef {
+    margin-left: 62px;
+    padding-right: 51px;
+    line-height: 42px;
+}
+
+#naam {
+    margin-left: 68px;
+    padding-right: 48px;
+    line-height: 42px;
+}
+
+#postcode {
+    margin-left: 43px;
+    padding-right: 47px;
+    line-height: 42px;
+}
+
+#huisNummer {
+    margin-left: 15px;
+    padding-right: 46px;
+    line-height: 42px;
+}
+
+#land {
+    margin-left: 76px;
+    padding-right: 49px;
+    line-height: 42px;
+}
+
+#afleverAdres {
+    margin-left: 15px;
+    padding-right: 53px;
+    line-height: 42px;
+}
+
+#e-Mail {
+    margin-left: -1px;
+    padding-right: 48px;
+    line-height: 42px;
+}
+
+#telefoonNummer {
+    margin-left: -42px;
+    padding-right: 49px;
+    line-height: 42px;
+}
+
+#geboorteDatum {
+    margin-left: -35px;
+    padding-right: 49px;
+    line-height: 42px;
+}
+
+#verzendwijzeFactuur {
+    margin-left: -72px;
+    padding-right: 55px;
+    line-height: 42px;
+}
+
+#nieuwsBrief {
+    margin-left: 5px;
+    padding-right: 50px;
+}
+
+#cadeauBon { 
+    color: #fd6600;
+    font-weight: bold;
+}
+
+#kleurVerpakking {
+    margin-left: -40px;
+    padding-right: 50px;
+    line-height: 42px;
+}
+
+
+.tGegevens {
+    color: #2e5ca1;
+    font-size: 1.4em;
+    font-weight: 900;
+}
+
+#tGegevens span {
+    color: #fd6600;
+}
+
+.tFactuur {
+    color: #41acf8;
+}
+
+.tbNaam {
+    height: 25px;
+}
+
+#tbVoornaam {
+    width: 180px;
+}
+
+#tbTussenvoegsel {
+    width: 100px;
+}
+
+#tbAchternaam {
+    width: 180px;
+}
+
+#tbPostcode {
+    width: 100px;
+}
+
+#tbHuisnummer {
+    width: 50px;
+}
+
+#tbToevoeging {
+    width: 50px;
+}
+
+#land span {
+    font-weight: bolder;
+}
+
+#aBelgie {
+    text-decoration: none;
+    color: #41acf8;
+}
+
+#tbEmail {
+    width: 225px;
+}
+
+#tbTelefoonNummer {
+    width: 175px;
+}
+
+#dGeboorteDatum {
+    width: 175px;
+}
+
+#textBestelling {
+    margin-left: 185px;
+    line-height: 42px;
+}
+
+#cKleurVerpakking {
+    width: 200px;   
+    line-height: 42px;
+    height: 22px;
+}
+
+#line-space {
+    line-height: 42px;
+}
+
+#wachtwoord {
+    margin-left: -10px;
+    padding-right: 50px;
+
+    line-height: 42px;
+}
+
+#wachtwoordKleur {
+    color: #555;
+    font-size: 11.5px;
+
+    margin-left: 165px;
+}
+
+#wachtwoordBevestigen {
+    margin-left: -103px;
+    padding-right: 50px;
+
+    line-height: 62px;
+}
+
+#container-grayBox {
+    width: 820px;
+    height: 65px;
+    background-color: gainsboro;
+
+    margin-left: -105px;
+}
+
+#submit-Button {    
+    color: whitesmoke;
+    font-weight: bold;
+    background-color: #00ba01;
+
+    width: 100px;
+    height: 45px;
+
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 2%;
+    box-shadow: 0px 0px 1px 2px #1aa327;
+    border: none;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+#submit-Button:hover {
+    transform: translateY(-4px);
+}
+
+footer {
+    padding-top: 100px;
+}
+
+#footer-container {
+    width: 1920px;
+    height: 300px;
+
+    background: #0090e3;
+
+    padding-left: 155px;
+    padding-top: 50px;
+}
+
+#footer-container span {
+    color: #fd6600;
+}
+
+#footer-container img {
+    width: 75px;
+}
+
+#tekst-1 {
+    position: absolute;
+    margin-top: -57px;
+    margin-left: 65px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+
+#tekst-2 {
+    position: absolute;
+    margin-top: -28px;
+    margin-left: 65px;
+    font-size: 1.20em;
+    font-weight: 100;
+    color: white;
+}
+
+#tekst-3 {
+    padding-top: 20px;
+    margin-left: 16px;
+
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+}
+
+#tekst-4 {
+    padding-top: 5px;
+    margin-left: 16px;
+
+    font-size: 0.9em;
+    font-weight: 100;
+    color: white;
+}
+
+#tekst-5 {
+    margin-left: 16px;
+
+    font-size: 0.9em;
+    font-weight: 100;
+    color: white;
+}
+
+#tekst-6 {    
+    position: absolute;
+    margin-top: -150px;
+    margin-left: 700px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+
+#tekst-7 {
+    position: absolute;
+    margin-top: -120px;
+    margin-left: 700px;
+    font-size: 1.20em;
+    font-weight: 100;
+    color: white;
+}
+
+#tekst-8 {
+    margin-top: -75px;
+    margin-left: 700px;
+    position: absolute;
+
+    font-size: 0.9em;
+    font-weight: 100;
+    color: white;
+}
+#tekst-9 {
+    margin-top: -40px;
+    margin-left: 700px;
+    position: absolute;
+
+    font-size: 0.9em;
+    font-weight: 100;
+    color: white;
+}
+#tekst-10 {
+    margin-top: -2px;
+    margin-left: 700px;
+    position: absolute;
+
+    font-size: 0.9em;
+    font-weight: 100;
+    color: white;
+}
+#tekst-11 {
+    margin-top: 32px;
+    margin-left: 700px;
+    position: absolute;
+
+    font-size: 0.9em;
+    font-weight: 100;
+    color: white;
+}
+#tekst-12 {
+    margin-top: 68px;
+    margin-left: 700px;
+    position: absolute;
+
+    font-size: 0.9em;
+    font-weight: 100;
+    color: white;
+}
+#tekst-13 {
+    margin-top: 85px;
+    margin-left: 715px;
+    position: absolute;
+
+    font-size: 0.9em;
+    font-weight: 100;
+    color: white;
+}
+
+#white-container {
+    width: 1920px;
+    height: 10vh;
+    background-color: white;
+
+    display: flex;
+    margin-left: 600px;
+    padding-top: 20px;
+}
+
+#thuiswinkel img {
+    width: 40px;
+    height: 40px;
+}
+
+#ideal img {
+    width: 40px;
+    height: 40px;
+}
+
+#mastercard img {
+    width: 40px;
+    height: 40px;
+}
+
+#paypal img {
+    width: 60px;
+    height: 40px    ;
+}
+
+#visa img {
+    width: 75px;
+    height: 40px;
+}
+
+#postnl img {
+    width: 40px;
+    height: 40px;
+}
+

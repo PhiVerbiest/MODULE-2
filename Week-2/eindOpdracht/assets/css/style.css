@@ -27,6 +27,8 @@ body {
 
     width: 1170px;
     margin: 0 auto;
+
+    padding-top: 100px; 
 }
 
 /* Kaart Deck Info */
@@ -41,6 +43,8 @@ h1 a {
     float: inline-start;
     padding-right: 124px;
     text-decoration: none;
+    position: absolute;
+    margin-top: -100px;
 }
 
 /* De 4 Kaart sections */
@@ -67,7 +71,7 @@ section {
 .AandIcon-10 {
     position: relative;
 
-    left: -40px;
+    left: -35px;
     top: -78px;
 }
 
@@ -132,8 +136,11 @@ section {
     box-shadow: 2px 2px 5px 3px #555;
 }
 
+#whiteCard-Box {
+    padding-bottom: -100px;
+}
+
 .whiteCard:hover {
-    transform: scale(1.1);
     z-index:20;
 }
 
@@ -448,6 +455,7 @@ section {
 
 .ruiten-A:hover {
     transform: scale(1.1);
+    margin-top: -100px;
     z-index:20;
 }
 

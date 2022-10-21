@@ -5,48 +5,310 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="./assets/js/js.js"></script>
-    <title>eindOpdracht</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./assets/js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>eindOpdracht week 3 Module 2</title>
 </head>
 <body>
-    <div id="white-container">
-
-    </div>
-
-    <header>
-        <section id="header-container">
-            
-        </section>
+    <!-- ! Header -->
+    <!-- ! Naam Site:
+        ^ Xexly 
+    !-->
+    <header id="page-header">
+        <span id="xexly">Xexly</span>
+        <nav>
+            <div id="navbar">
+                
+                <a id="home-borders" href="#home">Home</a>
+            <div id="dropdown">
+                <button id="dropbtn">
+                        Producten
+                    <i class="fa fa-caret-down"></i>  
+                </button>
+                <div id="dropdown-content">
+                    <a href="#shop-1">Shop 1</a>
+                    <a href="#shop-2">Shop 2</a>
+                    <a href="#shop-3">Shop 3</a>
+                    <a href="#shop-4">Shop 4</a>
+                </div>
+              </div>
+                <a id="contact-borders" href="#contact">Contact</a>
+            </div>
+        </nav>
     </header>
-        <div id="slideshow-container">
 
-            <div class="mySlides fade">
-                <div id="desktop-Oktober">
-                    <img src="./assets/img/desktop-oktober-nl.webp" alt="">
-                </div>
-            </div>
+    <section id="home">
+      <h1>XEXLY SHOES</h1>
+    </section>
 
-            <div class="mySlides fade">
-                <div id="promotieMogelijkheden">
-                    <img src="./assets/img/header__zakelijke_promotiemogelijkheden__nl.webp" alt="">
-                </div>
-            </div>
+    <!-- ^ Webshop gedeelte -->
+    <section id="shop-1">
 
-            <div class="mySlides fade">
-                <div id="xxl-Magazine">
-                    <img src="./assets/img/xxl_business_magazine_promo_header-2021_2.webp" alt="">
-                </div>
-            </div>
+      <h3>Shop 1</h3>
 
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
+      <ul>
+        <li>
+          <div class="details">
+            <h2>Nike Odyssey React Shield</h2>
+            <p>$130</p>
+            <p>$130</p>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike01a.png">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike01b.png">
           </div>
+        </li>
+        <li>
+          <div class="details">
+            <h2>LeBron 16</h2>
+            <p>$185</p>
+            <p>$185</p>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike02a.png">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike02b.png">
+          </div>
+        </li>
+        <li>
+          <div class="details">
+            <h2>Nike Epic React Flyknit</h2>
+            <p>$150</p>
+            <p>$150</p>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike03a.png">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike03b.png">
+          </div>
+        </li>
+        <li>
+          <div class="details">
+            <h2>Nike Air Max 97 Premium</h2>
+            <p>$180</p>
+            <p>$180</p>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike04a.png">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike04b.png">
+          </div>
+        </li>
+        <li>
+          <div class="details">
+            <h2>Nike Free RN Motion Flyknit 2018</h2>
+            <p>$150</p>
+            <p>$150</p>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike05a.png">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike05b.png">
+          </div>
+        </li>
+        <li>
+          <div class="details">
+            <h2>Nike Free RN Flyknit 2018</h2>
+            <p>$120</p>
+            <p>$120</p>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike06a.png">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike06b.png">
+          </div>
+        </li>
+        </ul>
+    </section>
+
+    <section id="shop-2">
+      <ul>
+        <li>
+          <div class="details">
+            <h2>Nike Rise React Flyknit LMTD</h2>
+            <p>$175</p>
+            <p>$175</p>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike07a.png">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike07b.png">
+          </div>
+        </li>
+        <li>
+          <div class="details">
+            <h2>Nike Flyknit Racer G</h2>
+            <p>$175</p>
+            <p>$175</p>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike08a.png">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike08b.png">
+          </div>
+        </li>
+        <li>
+          <div class="details">
+            <h2>Nike EXP-X14 Premium iD</h2>
+            <p>$160</p>
+            <p>$160</p>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike09a.png">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike09b.png">
+          </div>
+        </li>
+        <li>
+          <div class="details">
+            <h2>Nike Free x Retcon</h2>
+            <p>$120</p>
+            <p>$120</p>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike10a.png">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike10b.png">
+          </div>
+        </li>
+        <li>
+          <div class="details">
+            <h2>Nike Air Force 1 '07 Suede</h2>
+            <p>$90</p>
+            <p>$90</p>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike11a.png">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike11b.png">
+          </div>
+        </li>
+        <li>
+          <div class="details">
+            <h2>Nike Metcon 4 iD</h2>
+            <p>$150</p>
+            <p>$150</p>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike12a.png">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike12b.png">
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="shop-3">
+
+
+      <ul>
+      <li>
+        <div class="details">
+          <h2>Nike Odyssey React Shield</h2>
+          <p>$130</p>
+          <p>$130</p>
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike01a.png">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike01b.png">
+        </div>
+      </li>
+      <li>
+        <div class="details">
+          <h2>LeBron 16</h2>
+          <p>$185</p>
+          <p>$185</p>
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike02a.png">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike02b.png">
+        </div>
+      </li>
+      <li>
+        <div class="details">
+          <h2>Nike Epic React Flyknit</h2>
+          <p>$150</p>
+          <p>$150</p>
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike03a.png">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike03b.png">
+        </div>
+      </li>
+      <li>
+        <div class="details">
+          <h2>Nike Air Max 97 Premium</h2>
+          <p>$180</p>
+          <p>$180</p>
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike04a.png">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike04b.png">
+        </div>
+      </li>
+      <li>
+        <div class="details">
+          <h2>Nike Free RN Motion Flyknit 2018</h2>
+          <p>$150</p>
+          <p>$150</p>
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike05a.png">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike05b.png">
+        </div>
+      </li>
+      <li>
+        <div class="details">
+          <h2>Nike Free RN Flyknit 2018</h2>
+          <p>$120</p>
+          <p>$120</p>
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike06a.png">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike06b.png">
+        </div>
+      </li>
+      </ul>
+    </section>
+
+    <section id="shop-4">
+      <ul>
+        <li>
+          <div class="details">
+            <h2>Nike Rise React Flyknit LMTD</h2>
+            <p>$175</p>
+            <p>$175</p>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike07a.png">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike07b.png">
+          </div>
+        </li>
+        <li>
+          <div class="details">
+            <h2>Nike Flyknit Racer G</h2>
+            <p>$175</p>
+            <p>$175</p>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike08a.png">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike08b.png">
+          </div>
+        </li>
+        <li>
+          <div class="details">
+            <h2>Nike EXP-X14 Premium iD</h2>
+            <p>$160</p>
+            <p>$160</p>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike09a.png">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike09b.png">
+          </div>
+        </li>
+        <li>
+          <div class="details">
+            <h2>Nike Free x Retcon</h2>
+            <p>$120</p>
+            <p>$120</p>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike10a.png">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike10b.png">
+          </div>
+        </li>
+        <li>
+          <div class="details">
+            <h2>Nike Air Force 1 '07 Suede</h2>
+            <p>$90</p>
+            <p>$90</p>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike11a.png">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike11b.png">
+          </div>
+        </li>
+        <li>
+          <div class="details">
+            <h2>Nike Metcon 4 iD</h2>
+            <p>$150</p>
+            <p>$150</p>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike12a.png">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike12b.png">
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ~ Footer gedeelte -->
+      <div class="container" id="contact">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Nederland</option>
+            <option value="canada">Belgie</option>
+            <option value="usa">Duitseland</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    
+      <footer>
+        <h3>&#169; XEXLY</h3>
+      </footer>
 </body>
 </html>

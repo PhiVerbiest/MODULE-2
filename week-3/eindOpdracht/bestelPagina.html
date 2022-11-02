@@ -1,77 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./assets/css/style-bestel.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./assets/js/index.js"></script>
-    <title>bestel pagina</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/bestelpagina.css">
+  <title>bestelPagina</title>
 </head>
 <body>
-    <!-- ! Header -->
-    <!-- ! Naam Site:
-        ^ Xexly 
-    !-->
-    <header id="page-header">
-        <span id="xexly">Xexly</span>
-        <nav>
-            <div id="navbar">
-                
-                <a id="home-borders" href="index.html">Home</a>
-            <div id="dropdown">
-                <button id="dropbtn">
-                        Producten
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div id="dropdown-content">
-                    <a href="#">Link</a>
-                    <a href="#">Link</a>
-                    <a href="#">Link</a>
-                </div>
-            </div>
-                <a id="info-borders" href="#infoPage">Info</a>
-                <a id="contact-borders" href="#contactPage">Contact</a>
-            </div>
-        </nav>
-    </header>
-
-    <section id="pablo">
-        <div class="container page-wrapper">
-            <div class="page-inner">
-              <div class="row">
-                <div class="el-wrapper">
-                  <div class="box-up">
-                    <img class="img" src="http://code.slicecrowd.com/labs/4/images/t-shirt.png" alt="">
-                    <div class="img-info">
-                      <div class="info-inner">
-                        <span class="p-name">I feel like Pablo</span>
-                        <span class="p-company">Yeezy</span>
-                      </div>
-                      <div class="a-size">Available sizes : <span class="size">S , M , L , XL</span></div>
-                    </div>
-                  </div>
-          
-                  <div class="box-down">
-                    <div class="h-bg">
-                      <div class="h-bg-inner"></div>
-                    </div>
-          
-                    <a class="cart" href="#">
-                      <span class="price">$120</span>
-                      <span class="add-to-cart">
-                        <span class="txt">Add in cart</span>
-                      </span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+  <form action="bedankt.php" method="post">
+      <div class="container">
+    <div class="checkout-card">
+      <div class="title">
+        <p><span>Checkout</span> <br> Xexly</p>
+      </div>
+      <div class="price-container">
+        <div class="price-card">
+          <input name="price" id="monthly" type="radio" onclick="checkoutPayment('DHL')" required>
+          <div class="content">
+            DHL Sameday
+            <span>$7,95/Shipping</span>
           </div>
-    </section>
+          <label for="monthly"></label>
+        </div>
+        
+        <div class="price-card">
+          <input name="price" type="radio" id="yearly" onclick="checkoutPayment('PostNL')" required>
+          <div class="content">
+            PostNL
+            <span>$4,95/Shipping</span>
+          </div>
+          <label for="yearly"></label>
+        </div>
+        
+      </div>
+      <div class="detail-info">
+        <div class="info">
+          <h3>Totaal Order <span id="fee"></span></h3>
+          <small>Enter your credit card detail to complete subscription</small>
+        </div>
+        <div class="input-field">
+          <label for="card_number">Card number</label>
+          <input type="number" id="card_number" placeholder="32">
+        </div>
+        <div class="grid">
+          <div class="input-field">
+            <label for="expire_date">Expire date</label>
+            <input type="date" id="expire_date" placeholder="23-Jan-2021">
+          </div>
+          <div class="input-field">
+            <label for="card_code">Card code</label>
+            <input type="number" id="card_code" placeholder="322">
+          </div>
+        </div>
+        
+        <p>Here by you agree with terms of our products</p>
+        
+        <button class="btn">Continue</button>
+      </div>
+    </div>
+  </div>
+  </form>
 
-    <section></section>c
+  <script >
+
+    function checkoutPayment(type) {
+      let params = (new URL(document.location)).searchParams;
+      let prijs = params.get('prijs');
+      prijs = parseInt(prijs);
+      let fee;
+
+
+      // console.log(prijs);
+
+    if(type === 'DHL') {
+    fee = 7.95;
+    }
+
+    if(type === 'PostNL') {
+      fee = 4.95;
+    }
+
+    let totaal = prijs + fee;
+
+    console.log(totaal);
+
+    document.getElementById('fee').innerHTML = "$" + totaal;
+}
+  </script>
 </body>
 </html>
